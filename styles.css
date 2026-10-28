@@ -218,7 +218,7 @@ a {
    object-fit: cover;
 }
 
-/* flex styling so cards stack vertically when smaller screen size */
+/* flex styling so cards stack vertically when smaller screen sizegit add . */
 .cardBody {
    display: flex;
    flex-direction: column;
@@ -255,5 +255,34 @@ a {
       width: 40%;
       height: auto;
       flex-shrink: 0;
+   }
+}
+
+/* tablet tall breakpoint/screensize */
+@media (max-width: 899px) {
+   .hero {
+      min-height: 480px;
+      padding: 0 8%;
+   }
+
+   .heroContent {
+      max-width: 400px;
+   }
+
+   .services {
+      padding: 50px 8% 60px;
+   }
+
+   .servicesList {
+      gap: 24px;
+      margin-top: 40px;
+   }
+
+   .cardImage {
+      width: 45%;
+   }
+
+   .cardBody {
+      padding: 20px;
    }
 }
