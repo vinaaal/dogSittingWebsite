@@ -175,3 +175,19 @@ a {
    color: var(--color-white);
    margin-bottom: 28px;
 }
+
+/* service 'cards' styling, just centering it here slay */
+.services {
+   padding: 60px 10% 0;
+   text-align: center;
+}
+
+.servicesTitle {
+   margin-bottom: 16px;
+}
+
+.servicesText {
+   max-width: 700px;
+   margin: 0 auto;
+   color: var(--color-heading3-p);
+}
