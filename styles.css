@@ -2,7 +2,6 @@
 :root {
    --color-orange: #DE6C17;
    --color-Hoverorange: #FF6D00;
-   --color-text: #4a4a4a;
    --color-heading1-2: #36413C;
    --color-heading3-p: #5E6E66;
    --color-white: #FFFFFF;
@@ -28,7 +27,6 @@ body {
    font-weight: var(--font-weight-medium);
    font-size: var(--font-size-p);
    line-height: var(--line-height-text);
-   color: var(--color-text);
 }
 
 /* remove bullet and space around 'list' */
@@ -47,21 +45,23 @@ h1, h2, h3, p {
 h1,h2,h3 {
    font-weight: var(--font-weight-bold);
    line-height: var(--line-height-heading);
-   color: var(--color-heading);
 }
 
-/* heading sizes */
+/* heading sizes and colours */
 h1 {
    font-size: var(--font-size-h1);
+   color: var(--color-heading1-2);
 }
 h2 {
    font-size: var(--font-size-h2);
+   color: var(--color-heading1-2);
 }
 h3 {
    font-size: var(--font-size-h3);
+   color: var(--color-heading3-p);
 }
 
-/* tetris link styling */
+/* link styling */
 a {
    font-weight: var(--font-weight-bold);
    font-size: var(--font-size-link);
@@ -69,8 +69,45 @@ a {
    text-decoration: none;
 }
 
-/* tetris link hover effect */
-a:hover,
-a:focus {
-   text-decoration: underline;
+/* learn more button */
+.button {
+   display: inline-block;
+   padding: 10px 36px;
+   background-color: var(--color-orange);
+   color: var(--color-white);
+   border-radius: 4px;
+   transition: background-color 0.2s ease;
+}
+
+/* hover for this ^ */
+.button:hover,
+.button:focus {
+   background-color: var(--color-Hoverorange);
+   text-decoration: none;
+}
+
+/* smooth hover effect */
+.link {
+   display: inline-block;
+   transition: color 0.2s ease;
+}
+
+/* arrow next to learn more button */
+.link::after {
+   content: "";
+   display: inline-block;
+   width: 0.4em;
+   height: 0.4em;
+   margin-left: 0.6em;
+   border-top: 3px solid currentColor;
+   border-right: 3px solid currentColor;
+   transform: rotate(45deg);
+   vertical-align: middle;
+}
+
+/* hover for this ^ */
+.link:hover,
+.link:focus {
+   color: var(--color-Hoverorange);
+   text-decoration: none;
 }
