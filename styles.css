@@ -1,0 +1,74 @@
+/* use this everywhere swag */
+:root {
+   --color-orange: #e8630a;
+   --color-text: #4a4a4a;
+   --color-heading: #1a1a1a;
+   --color-white: #ffffff;
+
+   --font-family: 'Quicksand', sans-serif;
+   --font-weight-medium: 500;
+   --font-weight-bold: 700;
+
+   --font-size-h1: 2.5rem;
+   --font-size-h2: 2rem;
+   --font-size-h3: 1.25rem;
+   --font-size-p: 1rem;
+   --font-size-link: 0.875rem;
+
+   --line-height-heading: 1.2;
+   --line-height-text: 1.6;
+}
+
+/* fonts and colours for text on page */
+body {
+   margin: 0;
+   font-family: var(--font-family);
+   font-weight: var(--font-weight-medium);
+   font-size: var(--font-size-p);
+   line-height: var(--line-height-text);
+   color: var(--color-text);
+}
+
+/* remove bullet and space around 'list' */
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+/* remove extra space around text */
+h1, h2, h3, p {
+   margin: 0;
+}
+
+/* heading typography */
+h1,h2,h3 {
+   font-weight: var(--font-weight-bold);
+   line-height: var(--line-height-heading);
+   color: var(--color-heading);
+}
+
+/* heading sizes */
+h1 {
+   font-size: var(--font-size-h1);
+}
+h2 {
+   font-size: var(--font-size-h2);
+}
+h3 {
+   font-size: var(--font-size-h3);
+}
+
+/* tetris link styling */
+a {
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-size-link);
+   color: var(--color-orange);
+   text-decoration: none;
+}
+
+/* tetris link hover effect */
+a:hover,
+a:focus {
+   text-decoration: underline;
+}
