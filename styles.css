@@ -1,19 +1,21 @@
 /* use this everywhere swag */
 :root {
-   --color-orange: #e8630a;
+   --color-orange: #DE6C17;
+   --color-Hoverorange: #FF6D00;
    --color-text: #4a4a4a;
-   --color-heading: #1a1a1a;
-   --color-white: #ffffff;
+   --color-heading1-2: #36413C;
+   --color-heading3-p: #5E6E66;
+   --color-white: #FFFFFF;
 
    --font-family: 'Quicksand', sans-serif;
    --font-weight-medium: 500;
    --font-weight-bold: 700;
 
-   --font-size-h1: 2.5rem;
-   --font-size-h2: 2rem;
-   --font-size-h3: 1.25rem;
-   --font-size-p: 1rem;
-   --font-size-link: 0.875rem;
+   --font-size-h1: 45px;
+   --font-size-h2: 36px;
+   --font-size-h3: 24px;
+   --font-size-p: 18px;
+   --font-size-link: 18px;
 
    --line-height-heading: 1.2;
    --line-height-text: 1.6;
