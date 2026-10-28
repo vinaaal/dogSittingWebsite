@@ -218,18 +218,42 @@ a {
    object-fit: cover;
 }
 
+/* flex styling so cards stack vertically when smaller screen size */
+.cardBody {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   padding: 24px;
+}
+
 .cardTitle {
-   padding: 24px 24px 0;
+   margin-bottom: 12px;
 }
 
 .cardText {
    flex-grow: 1;
-   padding: 12px 24px 20px;
+   margin-bottom: 20px;
    font-size: 16px;
    color: var(--color-heading3-p);
 }
 
 .card .link {
    align-self: flex-start;
-   margin: 0 24px 24px;
+}
+
+/* tablet wide breakpoint/screensize */
+@media (max-width: 1023px) {
+   .servicesList {
+      grid-template-columns: 1fr;
+   }
+
+   .card {
+      flex-direction: row;
+   }
+
+   .cardImage {
+      width: 40%;
+      height: auto;
+      flex-shrink: 0;
+   }
 }
