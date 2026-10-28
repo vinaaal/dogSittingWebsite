@@ -129,7 +129,7 @@ a {
    width: 100%;
    height: 100%;
    object-fit: cover;
-   object-position: right top;
+   object-position: right 20%;
    z-index: 0;
 }
 
@@ -243,6 +243,16 @@ a {
 
 /* tablet wide breakpoint/screensize */
 @media (max-width: 1023px) {
+       .heroImage {
+      left: auto;
+      right: -20%;
+      width: 120%;
+   }
+
+   .heroContent {
+      max-width: 360px;
+   }
+
    .servicesList {
       grid-template-columns: 1fr;
    }
@@ -265,10 +275,15 @@ a {
       padding: 0 8%;
    }
 
-   .heroContent {
-      max-width: 400px;
+      .heroImage {
+      left: auto;
+      right: -20%;
+      width: 120%;
    }
 
+   .heroContent {
+      max-width: 300px;
+   }
    .services {
       padding: 50px 8% 60px;
    }
@@ -280,6 +295,59 @@ a {
 
    .cardImage {
       width: 45%;
+   }
+
+   .cardBody {
+      padding: 20px;
+   }
+}
+
+
+/* mobile breakpoint/screensize */
+@media (max-width: 599px) {
+   :root {
+      --font-size-h1: 32px;
+      --font-size-h2: 28px;
+      --font-size-h3: 20px;
+      --font-size-p: 16px;
+      --font-size-link: 16px;
+   }
+
+   .hero {
+      min-height: 620px;
+      align-items: flex-end;
+      padding: 0 24px;
+   }
+
+   .heroImage {
+      object-position: 75% top;
+   }
+
+   .hero::before {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 70%);
+   }
+
+   .heroContent {
+      max-width: 100%;
+      padding-bottom: 70px;
+   }
+
+   .services {
+      padding: 40px 24px 50px;
+   }
+
+   .servicesList {
+      gap: 20px;
+      margin-top: 30px;
+   }
+
+   .card {
+      flex-direction: column;
+   }
+
+   .cardImage {
+      width: 100%;
+      height: 200px;
    }
 
    .cardBody {
